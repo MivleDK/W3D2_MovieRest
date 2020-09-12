@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 3 day 4</title>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="addUlList()" >
+
+
+        <form onsubmit="addToList(); return false">
+            <input type="text" id="fname" name="fname" ><br>
+            <input type="submit" value="Submit">
+        </form>         
+        <button onclick="removeFirst()">Remove first</button>
+        <button onclick="removeLast()">Remove last</button>
+        
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+/* 
+    Created on : 10-09-2020, 12:25:12
+    Author     : Mickl
+*/
+
+body{
+    margin-top: 5% !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+    font-family: arial, sans-serif;
+}
+
+.divDude{
+    height: 2em;
+    line-height: 2em;
+}
+
+.mydiv{
+    width: 25px; 
+    height: 25px;
+    background-color:yellow; 
+    margin:1px;
+}
+
+#container{
+    width: 226px;
+    height: 274px;
+    border: 3px solid darkblue;
+    margin: auto
+}
+.t1, .t4{
+    border: 1px solid black;
+    height: 48px;
+    margin-left: 3px;
+    margin-top: 3px;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+}
+.t1{
+    width: 48px;
+}
+.t4{
+    width: 219px;
+}
