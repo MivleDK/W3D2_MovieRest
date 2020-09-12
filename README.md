@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/MivleDK/Dat3semFlow1REST_Movie.svg?branch=master)](https://travis-ci.org/MivleDK/Dat3semFlow1REST_Movie)  
 
 # REST-API Movies 
 
