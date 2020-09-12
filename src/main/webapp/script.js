@@ -1,7 +1,7 @@
 function doRestAll() {
     let idFromInput = document.getElementById("efterID").value;
     let pTag = document.getElementById("restPlaceholder");
-    let url = "http://localhost:8080/W3D2_EX2/api/movie/all";
+    let url = "http://localhost:8080/jpareststarter/api/movie/all";
     var tbody = document.getElementById("tbody");
     tbody.innerHTML = "";
     var tableRow = document.getElementById("pTable");
