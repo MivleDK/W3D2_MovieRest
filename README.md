@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/MivleDK/W3D2_MovieRest.svg?branch=master)](https://travis-ci.org/MivleDK/W3D2_MovieRest)  
 
 # REST-API Movies 
 
