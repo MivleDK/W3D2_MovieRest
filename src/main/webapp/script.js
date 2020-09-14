@@ -1,12 +1,12 @@
 function doRestAll() {
     let idFromInput = document.getElementById("efterID").value;
     let pTag = document.getElementById("restPlaceholder");
-    let url = "http://localhost:8080/jpareststarter/api/movie/all";
+    //let url = "http://localhost:8080/jpareststarter/api/movie/all";
     var tbody = document.getElementById("tbody");
     tbody.innerHTML = "";
     var tableRow = document.getElementById("pTable");
 
-    fetch(url)
+    fetch("api/movie/all")
             .then(res => res.json())
             .then(data => {
                 console.log("data", data);
@@ -17,11 +17,11 @@ function doRestAll() {
 function antalFilm() {
     let idFromInput = document.getElementById("efterID").value;
     let antalFilm = document.getElementById("antalFilm");
-    let url = "http://localhost:8080/jpareststarter/api/movie/count";
+    //let url = "http://localhost:8080/jpareststarter/api/movie/count";
     var tbody = document.getElementById("tbody");
     tbody.innerHTML = "";
 
-    fetch(url)
+    fetch("api/movie/count")
             .then(res => res.json())
             .then(data => {
                 console.log("data", data);
@@ -32,9 +32,9 @@ function antalFilm() {
 function efterID() {
     tbody.innerHTML = "";
     let idFromInput = document.getElementById("efterID").value;
-    let url = "http://localhost:8080/jpareststarter/api/movie/" + idFromInput;
+    //let url = "http://localhost:8080/jpareststarter/api/movie/" + idFromInput;
     console.log(idFromInput);
-    fetch(url)
+    fetch("api/movie/"+idFromInput)
             .then(res => res.json())
             .then(data => {
                 console.log("data", data);
@@ -45,11 +45,11 @@ function efterID() {
 function efterTitel() {
     let titelSoeg = document.getElementById("efterTitel").value;
     let antalFilm = document.getElementById("antalFilm");
-    let url = "http://localhost:8080/jpareststarter/api/movie/title/" + titelSoeg;
+    //let url = "http://localhost:8080/jpareststarter/api/movie/title/" + titelSoeg;
     var tbody = document.getElementById("tbody");
     tbody.innerHTML = "";
 
-    fetch(url)
+    fetch("api/movie/title/"+titelSoeg)
             .then(res => res.json())
             .then(data => {
                 console.log("data", data);
